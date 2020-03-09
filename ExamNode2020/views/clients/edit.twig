@@ -1,0 +1,8 @@
+<form action="/users/update" method="POST">
+    <input type="text" placeholder="Nom" name="{{result[0].nom}}"><br>
+    <input type="text" placeholder="Prenom" name="{{result[0].prenom}}"><br>
+    <input type="text" placeholder="Location" name="{{result[0].location}}"><br>
+    <input type="number" placeholder="Age" name="{{result[0].age}}"><br>
+    <input type="hidden" name="id" value="{{result[0].id}}">
+    <button type="submit" id="btnAdd">Submit</button>
+</form>

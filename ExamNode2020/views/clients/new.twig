@@ -1,0 +1,35 @@
+<html>
+<head>
+    <link rel="stylesheet" href="/stylesheets/bootstrap.min.css">
+</head>
+<body>
+<form id="addUser" action="/users/addUser" method="POST" class="form-group">
+    <table>
+        <tr>
+            <td>Nom :</td>
+            <td><input type="text" placeholder="Nom" name="nom" id="nom" class="form-control"></td>
+        </tr>
+        <tr>
+            <td>Prenom :</td>
+            <td><input type="text" placeholder="Prenom" name="prenom" id="prenom" class="form-control"></td>
+        </tr>
+        <tr>
+            <td>Location : </td>
+            <td><input type="text" placeholder="Location" name="location" id="location" class="form-control"></td>
+        </tr>
+        <tr>
+            <td>Age : </td>
+            <td><input type="number" placeholder="Age" name="age" id="age" class="form-control"></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td><button type="submit" id="btnAdd" class="btn-danger btn">Submit</button></td>
+        </tr>
+    </table>
+</form>
+</body>
+
+
+<script src="/javascripts/bootstrap.min.js"></script>
+<script src="/javascripts/jquery-1.11.1.min.js"></script>
+<script src="/javascripts/validate.js"></script>

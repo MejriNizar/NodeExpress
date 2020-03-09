@@ -1,0 +1,39 @@
+<head>
+    <title> CRUD </title>
+</head>
+<body>
+    <table border="1" id="userList">
+        <tr>
+        <th>Nom</th>
+        <th>Prénom </th>
+        <th>Age</th>
+        <th> Actions </th>
+        </tr>
+        {% for a in allClients %}
+        <tr>
+            <td>{{a.nom}}</td>
+            <td>{{a.prenom}}</td>
+            <td>{{a.age}}</td>
+            <td> 
+                <a href="/users/edit/{{a._id}}">Edit</a>
+                <a href="/users/delete/{{a._id}}">Delete</a>
+            </td>
+        </tr>  
+        {% endfor %}
+    </table>
+<!--
+    <form id="addUser">
+        <input type="text" placeholder="Nom" id="nom">
+        <input type="text" placeholder="Prenom" id="prenom"><br>
+        <input type="text" placeholder="Location" id="location"><br>
+        <input type="number" placeholder="Age" id="age">
+        <button type="submit" id="btnAdd">Submit</button>
+    </form>
+-->
+    <script src="/javascripts/jquery-ease.js"  type="text/javascript"></script>
+    <script src="/javascripts/jquery-1.11.1.min.js"  type="text/javascript"></script>
+    <script src="/javascripts/global.js"  type="text/javascript"></script>
+
+    
+
+</body>
